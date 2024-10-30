@@ -104,3 +104,62 @@ video {
 // ---------------------------------------------
 // Votre code ici :
 // ---------------------------------------------
+
+.marker:hover .product-cart {
+  opacity: 100;
+}
+
+.product-cart {
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+}
+
+.product-cart:hover {
+  background-color: #2c5192;
+  color: #eae9e6;
+}
+
+.pencil:hover .product-cart {
+  opacity: 100;
+  transform: translatey(0%);
+}
+
+.product-cart {
+  opacity: 0;
+  transition: 0.4s ease-in-out;
+  transform: translatey(-100%);
+}
+
+.product-cart:hover {
+  background-color: #2c5192;
+  color: #eae9e6;
+}
+
+.scissors {
+  transition: 0.5s ease-in-out;
+}
+
+.scissors:hover {
+  background-color: #2c5192;
+  color: #fff;
+}
+
+.sketchbook .product-image {
+  overflow: hidden;
+}
+.sketchbook .product-image img {
+  transition: 0.5s ease-in-out;
+}
+
+.sketchbook:hover .product-image img {
+  scale: 1.2;
+}
+
+.glue .product-image img {
+  transition: 0.3s ease-in-out;
+
+  filter: blur(2px);
+}
+.glue:hover .product-image img {
+  filter: blur(0px);
+}
