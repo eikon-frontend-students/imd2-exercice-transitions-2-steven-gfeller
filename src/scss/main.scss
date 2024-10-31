@@ -163,3 +163,23 @@ video {
 .glue:hover .product-image img {
   filter: blur(0px);
 }
+.share .share-list {
+  transition: 0.5s ease-in-out;
+}
+.share:hover .share-list {
+  opacity: 100%;
+  transform: translateY(0);
+}
+
+.share-list {
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.share-list:nth-child(2) {
+  transition-delay: 0.5s;
+}
+
+.share-list:nth-child(3) {
+  transition-delay: 1s;
+}
