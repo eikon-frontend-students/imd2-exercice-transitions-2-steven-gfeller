@@ -163,23 +163,22 @@ video {
 .glue:hover .product-image img {
   filter: blur(0px);
 }
-.share .share-list {
-  transition: 0.5s ease-in-out;
-}
-.share:hover .share-list {
-  opacity: 100%;
-  transform: translateY(0);
-}
 
-.share-list {
+.share .share-list .share-icon {
+  transition: 0.5s ease-in-out;
   opacity: 0;
   transform: translateY(-100%);
 }
 
-.share-list:nth-child(2) {
+.share .share-list .share-icon:nth-child(2) {
   transition-delay: 0.5s;
 }
 
-.share-list:nth-child(3) {
+.share .share-list .share-icon:nth-child(3) {
   transition-delay: 1s;
+}
+
+.share:hover .share-list .share-icon {
+  opacity: 100%;
+  transform: translateY(0);
 }
